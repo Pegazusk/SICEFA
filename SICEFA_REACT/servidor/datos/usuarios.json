@@ -1,0 +1,26 @@
+[
+  {
+    "usuario": "AG20230901",
+    "nombre": "Alvaro Gomez",
+    "esCentral": 1,
+    "idSucursal": 1
+  },
+  {
+    "usuario": "DP20230901",
+    "nombre": "Diego Perez",
+    "esCentral": 1,
+    "idSucursal": 1
+  },
+  {
+    "usuario": "MZ20230901",
+    "nombre": "Marcos Zermeño",
+    "esCentral": 0,
+    "idSucursal": 1
+  },
+  {
+    "usuario": "HC20230901",
+    "nombre": "Humberto Chavez",
+    "esCentral": 0,
+    "idSucursal": 1
+  }
+]

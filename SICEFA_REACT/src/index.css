@@ -1,0 +1,38 @@
+@import url('./styles.css');
+
+:root {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #29324a;
+  background: #f6f7fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --navy: #10066f;
+  --blue: #332496;
+  --red: #e92845;
+  --muted: #747c91;
+  --border: #e9eaf2;
+  --green: #24816a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+button, input, select, textarea { font: inherit; }
+button, a, input, select, textarea { -webkit-tap-highlight-color: transparent; }
+button, a { touch-action: manipulation; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; opacity: .48; }
+a { color: inherit; text-decoration: none; }
+button, a { transition: background-color .18s, color .18s, border-color .18s, box-shadow .18s; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #a8a0ef; outline-offset: 3px; }
+input, select, textarea { min-width: 0; width: 100%; border: 1px solid #dfe2ec; border-radius: 9px; background: #fff; color: #29324a; padding: 11px 13px; font-size: 13px; line-height: 1.5; }
+input::placeholder, textarea::placeholder { color: #9299ab; }
+input:focus, select:focus, textarea:focus { border-color: #8177c4; }
+input[aria-invalid=true], select[aria-invalid=true] { border-color: #df3d58; }
+textarea { resize: vertical; min-height: 88px; }
+fieldset { padding: 0; border: 0; margin: 0; min-width: 0; }
+label, .field-label { display: block; font-size: 12px; font-weight: 600; margin-bottom: 7px; color: #4b526b; }
+h1, h2, h3, p { margin: 0; }
+h1, h2, h3 { color: #202142; }
+svg { flex-shrink: 0; vertical-align: middle; }
+::selection { background: #e5e0ff; color: var(--navy); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; scroll-behavior: auto !important; } }

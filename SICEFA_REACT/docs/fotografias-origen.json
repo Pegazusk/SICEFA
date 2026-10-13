@@ -1,0 +1,362 @@
+[
+  {
+    "nombre": "Aciclovir",
+    "concentracion": "400 mg",
+    "presentacion": "Caja con 35 tabletas",
+    "foto": "/img/medicamentos/aciclovir.jpg",
+    "sourceTitle": "Aciclovir 400 Mg Caja C/35 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/aciclovir-400-mg-caja-c-35-tabletas-v2/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006613/7501349028791_01.jpg?v=639183678005300000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Albendazol",
+    "concentracion": "200 mg",
+    "presentacion": "Caja con 2 tabletas",
+    "foto": "/img/medicamentos/albendazol.jpg",
+    "sourceTitle": "Albendazol MK 200 mg, 2 tabletas",
+    "sourcePage": "https://www.farmatodo.com.co/producto/250850016-albendazol-200-mg-mk-caja-x-2-tabletas",
+    "sourceImage": "https://lh3.googleusercontent.com/4F7GHguy95o5hLu2lhPCW91CvxFKNrEGTuNgBSg6XOQdr4Xvu19pKaerd24amfsSCU91FA8KLLkbzJaYNp1wZ8GShrvR_5ZJWdnw_9R6bjoZLWAq=s1000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Amlodipino",
+    "concentracion": "5 mg",
+    "presentacion": "Caja con 30 tabletas",
+    "foto": "/img/medicamentos/amlodipino.jpg",
+    "sourceTitle": "Amlodipino 5 Mg Caja C/30 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/amlodipino-5-mg-caja-c-30-tabletas-v3/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006753/7502216804661_01.jpg?v=639183679655430000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Amoxicilina",
+    "concentracion": "500 mg",
+    "presentacion": "Caja con 12 cápsulas",
+    "foto": "/img/medicamentos/amoxicilina.jpg",
+    "sourceTitle": "Amoxicilina 500 Mg Caja C/12 Capsulas",
+    "sourcePage": "https://www.farmatodo.com.mx/amoxicilina-500-mg-caja-c-12-capsulas/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006348/7501349021570_01.jpg?v=639183675444300000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Atorvastatina",
+    "concentracion": "20 mg",
+    "presentacion": "Caja con 30 tabletas",
+    "foto": "/img/medicamentos/atorvastatina.jpg",
+    "sourceTitle": "Bacat Atorvastatina 20 Mg Caja C/30 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/bacat-atorvastatina-20-mg-caja-c-30-tabletas-v1/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006821/7502247373495_01.jpg?v=639183680443100000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Azitromicina",
+    "concentracion": "500 mg",
+    "presentacion": "Caja con 3 tabletas",
+    "foto": "/img/medicamentos/azitromicina.jpg",
+    "sourceTitle": "Azitromicina 500 Mg Caja C/3 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/azitromicina-500-mg-caja-c-3-tabletas-v3/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006277/7501075718096_01.jpg?v=639183674598430000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Bromhexina",
+    "concentracion": "4 mg/5 ml",
+    "presentacion": "Frasco con 100 ml",
+    "foto": "/img/medicamentos/bromhexina.jpg",
+    "sourceTitle": "Tesalon Tesacof Infantil Solucion 80 Mg Frasco C/100 Ml",
+    "sourcePage": "https://www.farmatodo.com.mx/tesalon-tesacof-infantil-solucion-80-mg-frasco-c-100-ml/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7009592/7501065038975_01.jpg?v=639183710612100000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Butilhioscina",
+    "concentracion": "10 mg",
+    "presentacion": "Caja con 20 tabletas",
+    "foto": "/img/medicamentos/butilhioscina.jpg",
+    "sourceTitle": "Espacil 10 Mg Caja C/20 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/espacil-10-mg-caja-c-20-tabletas/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7001447/7501122963806_01.jpg?v=639183625537330000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Captopril",
+    "concentracion": "25 mg",
+    "presentacion": "Caja con 30 tabletas",
+    "foto": "/img/medicamentos/captopril.jpg",
+    "sourceTitle": "Captopril 25 Mg Caja C/30 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/captopril-25-mg-caja-c-30-tabletas-v4/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006724/7502216792579_01.jpg?v=639183679337730000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Cefalexina",
+    "concentracion": "500 mg",
+    "presentacion": "Caja con 12 cápsulas",
+    "foto": "/img/medicamentos/cefalexina.jpg",
+    "sourceTitle": "Cefalver Cefalexina 500 Mg Caja C/12 Capsulas",
+    "sourcePage": "https://www.farmatodo.com.mx/cefalver-cefalexina-500-mg-caja-c-12-capsulas/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006531/7503000422863_01.jpg?v=639183677290670000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Ciprofloxacino",
+    "concentracion": "500 mg",
+    "presentacion": "Caja con 14 tabletas",
+    "foto": "/img/medicamentos/ciprofloxacino.jpg",
+    "sourceTitle": "Ciprofloxacino 500 Mg Caja C/14 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/ciprofloxacino-500-mg-caja-c-14-tabletas-v1/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006344/7501349021532_01.jpg?v=639183675428030000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Clotrimazol",
+    "concentracion": "1 %",
+    "presentacion": "Tubo con 20 g",
+    "foto": "/img/medicamentos/clotrimazol.jpg",
+    "sourceTitle": "Clotrimazol Andromaco 1%, 20 g",
+    "sourcePage": "https://farmex.cl/products/clotrimazol-crema",
+    "sourceImage": "https://farmex.cl/cdn/shop/products/clotrimazol-crema-1-x-20-g-andromaco-734090.jpg?v=1692989463&width=1000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Desloratadina",
+    "concentracion": "5 mg",
+    "presentacion": "Caja con 10 tabletas",
+    "foto": "/img/medicamentos/desloratadina.jpg",
+    "sourceTitle": "Bennet Desloratadina 5 Mg Caja C/10 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/bennet-desloratadina-5-mg-caja-c-10-tabletas/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7007232/7502009745881_01.jpg?v=639183684767200000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Dextrometorfano",
+    "concentracion": "15 mg/5 ml",
+    "presentacion": "Frasco con 120 ml",
+    "foto": "/img/medicamentos/dextrometorfano.jpg",
+    "sourceTitle": "Dextrometorfano Jarabe 15 Mg C/120 Ml",
+    "sourcePage": "https://www.farmatodo.com.mx/dextrometorfano-jarabe-15-mg-c-120-ml/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7007251/7501537101961_01.jpg?v=639183684978630000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Diclofenaco",
+    "concentracion": "100 mg",
+    "presentacion": "Caja con 20 tabletas",
+    "foto": "/img/medicamentos/diclofenaco.jpg",
+    "sourceTitle": "Diclofenaco 100mg C/20 Tabletas ULTRA",
+    "sourcePage": "https://www.farmatodo.com.mx/diclofenaco-100-mg-caja-c-20-tabletas-ultra/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7007174/7502216802919_01.jpg?v=639183684074030000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Doxiciclina",
+    "concentracion": "100 mg",
+    "presentacion": "Caja con 10 cápsulas",
+    "foto": "/img/medicamentos/doxiciclina.jpg",
+    "sourceTitle": "Kenciclen Doxiciclina 100 Mg Caja C/10 Capsulas",
+    "sourcePage": "https://www.farmatodo.com.mx/kenciclen-doxiciclina-100-mg-caja-c-10-capsulas/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006411/7501493888302_01.jpg?v=639183676190230000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Enalapril",
+    "concentracion": "10 mg",
+    "presentacion": "Caja con 30 tabletas",
+    "foto": "/img/medicamentos/enalapril.jpg",
+    "sourceTitle": "Enalapril 10mg C/30 Tabletas Ultra Lab",
+    "sourcePage": "https://www.farmatodo.com.mx/enalapril-10-mg-caja-c-30-tabletas-v2/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006727/7502216792845_01.jpg?v=639183679359970000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Esomeprazol",
+    "concentracion": "20 mg",
+    "presentacion": "Caja con 14 cápsulas",
+    "foto": "/img/medicamentos/esomeprazol.jpg",
+    "sourceTitle": "Tronium 20 Mg Caja C/14 Capsulas Liberacion Retardada",
+    "sourcePage": "https://www.farmatodo.com.mx/tronium-20-mg-caja-c-14-capsulas-liberacion-retardada/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7011888/7501299310946_01.jpg?v=639183734994070000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Famotidina",
+    "concentracion": "20 mg",
+    "presentacion": "Caja con 20 tabletas",
+    "foto": "/img/medicamentos/famotidina.jpg",
+    "sourceTitle": "Durater 20 Mg Caja C/20 Comprimidos",
+    "sourcePage": "https://www.farmatodo.com.mx/durater-20-mg-caja-c-20-comprimidos/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7001023/7501314704620_01.jpg?v=639183621441500000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Fexofenadina",
+    "concentracion": "120 mg",
+    "presentacion": "Caja con 10 tabletas",
+    "foto": "/img/medicamentos/fexofenadina.jpg",
+    "sourceTitle": "Allegra 120 Mg Caja C/10 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/allegra-120-mg-caja-c-10-tabletas-v1/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7005829/7501165001718_01.jpg?v=639183670153670000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Fluconazol",
+    "concentracion": "150 mg",
+    "presentacion": "Caja con 1 cápsulas",
+    "foto": "/img/medicamentos/fluconazol.jpg",
+    "sourceTitle": "Fluconazol 150 Mg Caja C/1 Capsulas",
+    "sourcePage": "https://www.farmatodo.com.mx/fluconazol-150-mg-caja-c-1-capsulas-v2/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006585/7501349012943_01.jpg?v=639183677648370000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Glibenclamida",
+    "concentracion": "5 mg",
+    "presentacion": "Caja con 50 tabletas",
+    "foto": "/img/medicamentos/glibenclamida.jpg",
+    "sourceTitle": "Reglusan Glibenclamida 5 Mg Caja C/50 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/reglusan-glibenclamida-5-mg-caja-c-50-tabletas/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7007334/7501075714739_01.jpg?v=639183685931900000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Guaifenesina",
+    "concentracion": "100 mg/5 ml",
+    "presentacion": "Frasco con 120 ml",
+    "foto": "/img/medicamentos/guaifenesina.jpg",
+    "sourceTitle": "Guaitussin Expectorante, guaifenesina 100 mg, jarabe 120 ml",
+    "sourcePage": "https://www.lumarpharmagt.com/guaitussin-expectorante",
+    "sourceImage": "https://static.wixstatic.com/media/8c753c_2b438bf28ede49d1b2b8cb02445f625e~mv2.jpg",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Loperamida",
+    "concentracion": "2 mg",
+    "presentacion": "Caja con 12 tabletas",
+    "foto": "/img/medicamentos/loperamida.jpg",
+    "sourceTitle": "Loperamida 2mg C/12 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/loperamida-2-mg-caja-c-12-tabletas-v3/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006961/7502208891549_01.jpg?v=639183682112670000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Losartán",
+    "concentracion": "50 mg",
+    "presentacion": "Caja con 30 tabletas",
+    "foto": "/img/medicamentos/losartan.jpg",
+    "sourceTitle": "Losartan 50 Mg Caja C/30 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/losartan-50-mg-caja-c-30-tabletas-v1/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006707/7501361681288_01.jpg?v=639183679120200000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Metformina",
+    "concentracion": "850 mg",
+    "presentacion": "Caja con 30 tabletas",
+    "foto": "/img/medicamentos/metformina.jpg",
+    "sourceTitle": "Metformina 850mg C/30 Tabletas ALPHARMA",
+    "sourcePage": "https://www.farmatodo.com.mx/metformina-850-mg-caja-c-30-tabletas/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7002008/7503004908776_01.jpg?v=639183630868370000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Metronidazol",
+    "concentracion": "500 mg",
+    "presentacion": "Caja con 20 tabletas",
+    "foto": "/img/medicamentos/metronidazol.jpg",
+    "sourceTitle": "Metronidazol Messeldazol 500 mg, 20 tabletas",
+    "sourcePage": "https://farmaciaherrera.com.mx/products/metronidazol-messeldazol-500-mg-con-20-tabletas",
+    "sourceImage": "https://cdn.shopify.com/s/files/1/0465/6981/6232/files/Metronidazol_Messeldazol_500_Mg_Con_20_Tabletas_7501573900016_7d950f69-834b-4c4b-89c8-c522e06f032a.jpg?v=1754067590",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Naproxeno",
+    "concentracion": "250 mg",
+    "presentacion": "Caja con 30 tabletas",
+    "foto": "/img/medicamentos/naproxeno.jpg",
+    "sourceTitle": "Novaxem Naproxeno 250 Mg Caja C/30 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/novaxem-naproxeno-250-mg-caja-c-30-tabletas/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7007580/7501075713800_01.jpg?v=639183688819800000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Pantoprazol",
+    "concentracion": "40 mg",
+    "presentacion": "Caja con 14 tabletas",
+    "foto": "/img/medicamentos/pantoprazol.jpg",
+    "sourceTitle": "Popram Pantoprazol 40 Mg Caja C/14 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/popram-pantoprazol-40-mg-caja-c-14-tabletas-v1/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006853/7501349028364_01.jpg?v=639183680847670000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Rosuvastatina",
+    "concentracion": "10 mg",
+    "presentacion": "Caja con 30 tabletas",
+    "foto": "/img/medicamentos/rosuvastatina.jpg",
+    "sourceTitle": "Rosuvastatina 10 Mg Caja C/30 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/rosuvastatina-10-mg-caja-c-30-tabletas/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006818/7502226293738_01.jpg?v=639183680416670000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Simvastatina",
+    "concentracion": "20 mg",
+    "presentacion": "Caja con 30 tabletas",
+    "foto": "/img/medicamentos/simvastatina.jpg",
+    "sourceTitle": "Xanterok Simvastatina 20 Mg Caja C/30 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/xanterok-simvastatina-20-mg-caja-c-30-tabletas/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006811/7501493889545_01.jpg?v=639183680331970000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Sulfato ferroso",
+    "concentracion": "200 mg",
+    "presentacion": "Caja con 30 tabletas",
+    "foto": "/img/medicamentos/sulfato-ferroso.jpg",
+    "sourceTitle": "Ansof 200 mg, caja con 30 tabletas",
+    "sourcePage": "https://vitau.mx/ansof-tab-200-mg-caja-c30-200-mg-caja-con-30-tabletas-25278",
+    "sourceImage": "https://images-products.vitau.mx/656599041315_25278.jpg",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Telmisartán",
+    "concentracion": "40 mg",
+    "presentacion": "Caja con 28 tabletas",
+    "foto": "/img/medicamentos/telmisartan.jpg",
+    "sourceTitle": "Telmisartan 40 Mg Caja C/28 Tabletas (Amsa)",
+    "sourcePage": "https://www.farmatodo.com.mx/telmisartan-40-mg-caja-c-28-tabletas-amsa-v1/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7006699/7501349025844_01.jpg?v=639183679053570000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Vitamina C",
+    "concentracion": "500 mg",
+    "presentacion": "Caja con 30 tabletas",
+    "foto": "/img/medicamentos/vitamina-c.jpg",
+    "sourceTitle": "Vitamina C Benessi 500 mg, 30 tabletas",
+    "sourcePage": "https://www.benessilabs.com/product/vitamina-c-500-mg/",
+    "sourceImage": "https://www.benessilabs.com/wp-content/uploads/2024/11/0010-0537-600x600.jpg",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Ácido acetilsalicílico",
+    "concentracion": "100 mg",
+    "presentacion": "Caja con 28 tabletas",
+    "foto": "/img/medicamentos/acido-acetilsalicilico.jpg",
+    "sourceTitle": "Aspirina Protect 100mg C/28 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/aspirina-protect-100-mg-caja-c-28-tabletas-liberacion-retardada/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7002885/7501318612655_01.jpg?v=639183639849830000",
+    "retrievedAt": "2026-10-13"
+  },
+  {
+    "nombre": "Ácido fólico",
+    "concentracion": "5 mg",
+    "presentacion": "Caja con 20 tabletas",
+    "foto": "/img/medicamentos/acido-folico.jpg",
+    "sourceTitle": "Cilocid Acido Folico 5 Mg Caja C/20 Tabletas",
+    "sourcePage": "https://www.farmatodo.com.mx/cilocid-acido-folico-5-mg-caja-c-20-tabletas/p",
+    "sourceImage": "https://gruporfp.vteximg.com.br/arquivos/ids/7007066/7502208892355_01.jpg?v=639183683157770000",
+    "retrievedAt": "2026-10-13"
+  }
+]
