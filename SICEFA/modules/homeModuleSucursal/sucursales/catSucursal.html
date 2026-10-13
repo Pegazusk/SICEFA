@@ -1,0 +1,204 @@
+
+        <div class="container d-flex justify-content-center align-items-center hv-100 ">
+            <div class="col-md-10 shadow">
+                <div class="card">
+                    <div class="card-body">
+
+                        <div class="d-flex justify-content-between" style="padding-bottom: 10px;">
+                            <h3>Sucursales</h3>
+                            <div class="d-flex">
+                                <div style="text-align: right;">
+                                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAltaSucursal">Agregar Sucursal</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <table class="table table-hover text-center">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Nombre</th>
+                                    <th>Calle</th>
+                                    <th>Colonia</th>
+                                    <th>Ciudad</th>
+                                    <th>Estado</th>
+                                    <th>Codigo Postal</th>
+                                    <th>Telefono</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="contenido">
+                            </tbody>
+                            <!-- <tbody>
+                                <tr>
+                                    <td>Diegito</td>
+                                    <td>culito</td>
+                                    <td>Grande</td>
+                                    <td>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#modalEditarSucursal">
+                                            <i class="fa fa-edit"></i>
+                                            Editar
+                                        </button>
+                                        <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                                data-bs-target="#modalEliminitSucursal">
+                                            <i class="fa fa-trash"></i>
+                                            Eliminar
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody> -->
+                        </table>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Agregar Sucursal -->
+        <div class="modal fade" id="modalAltaSucursal" tabindex="-1" aria-labelledby="modalAltaSucursalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalAltaSucursalLabel">Agregar Nuevo Sucursal</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="">Nombre:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese el nombre de la Sucursal" id="txtNombre">
+                            </div>
+                            <div class="col">
+                                <label for="">C.P.:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese la Concentración del Sucursal" id="txtCodPostal">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="">Domicilio:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese el nombre Generico del Sucursal" id="txtCalle">
+                            </div>
+                            <div class="col">
+                                <label for="">Telefono:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese la unidad" id="txtTelefono">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="">Colonia:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese su Apellido Materno" id="txtColonia">
+                            </div>
+                            <div class="col">
+                                <label for="">Longitud:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese el precio por unidad" id="txtLongitud">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="">Ciudad:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese la Unidad de medida" id="txtCiudad">
+                            </div>
+                            <div class="col">
+                                <label for="">Latitud:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese el Codigo" id="txtLatitud">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label for="">Estado:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="ingrese la Precentación del Sucursal" id="txtEstado">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mb-3">
+                        <button type="button" class="btn btn-primary btn-lg" onclick="controladorSucursal.altaSucursal()">Agregar Nuevo Sucursal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Editar Sucursal -->
+        <div class="modal fade" id="modalEditarSucursal" tabindex="-1" aria-labelledby="modalEditarSucursalLabel"
+             aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="modalEliminitSucursalLabel">Editar Sucursal</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="hidden" id="indice">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="">Nombre:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese el nombre de la Sucursal" id="txtEditarNombre">
+                            </div>
+                            <div class="col">
+                                <label for="">C.P.:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese la Concentración del Sucursal" id="txtEditarCodPostal">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="">Domicilio:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese el nombre Generico del Sucursal" id="txtEditarCalle">
+                            </div>
+                            <div class="col">
+                                <label for="">Telefono:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese la unidad" id="txtEditarTelefono">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="">Colonia:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese su Apellido Materno" id="txtEditarColonia">
+                            </div>
+                            <div class="col">
+                                <label for="">Longitud:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese el precio por unidad" id="txtEditarLongitud">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col">
+                                <label for="">Ciudad:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese la Unidad de medida" id="txtEditarCiudad">
+                            </div>
+                            <div class="col">
+                                <label for="">Latitud:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="Ingrese el Codigo" id="txtEditarLatitud">
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-6">
+                                <label for="">Estado:</label>
+                                <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                       placeholder="ingrese la Precentación del Sucursal" id="txtEditarEstado">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-center mb-3">
+                        <button type="button" class="btn btn-primary btn-lg" onclick="controladorSucursal.editarSucursal()">Editar Sucursal</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+

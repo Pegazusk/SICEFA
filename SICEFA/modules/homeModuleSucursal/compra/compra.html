@@ -1,0 +1,44 @@
+<div class="container d-flex justify-content-center align-items-center hv-100 ">
+    <div class="col-md-10 shadow">
+        <div class="card">
+            <div class="container mt-4">
+                <h2>Pedido de Compra</h2>
+                <form id="pedidoCompraForm">
+                    <div class="mb-3">
+                        <label for="producto" class="form-label">Producto:</label>
+                        <input type="text" class="form-control" id="producto" name="producto" required>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="cantidad" class="form-label">Cantidad:</label>
+                        <input type="number" class="form-control" id="cantidad" name="cantidad" required>
+                    </div>
+                    <input type="hidden" id="sucursal" name="sucursal" value="Nombre de la Sucursal">
+                    <input type="hidden" id="empleado" name="empleado" value="Nombre del Empleado">
+                    <input type="hidden" id="fecha" name="fecha" value="Fecha Actual">
+                    <input type="hidden" id="hora" name="hora" value="Hora Actual">
+
+                    <button type="button" onclick="controlador.realizarPedido()" class="btn btn-primary">Realizar
+                        Pedido</button>
+                </form>
+                <hr>
+                <h2>Lista de Pedidos</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Producto</th>
+                            <th>Cantidad</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaPedidosBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

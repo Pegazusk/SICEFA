@@ -1,0 +1,266 @@
+<div class="container d-flex justify-content-center align-items-center hv-100 ">
+    <div class="col-md-10 shadow">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h3>
+                        Clientes
+                    </h3>
+                    <div class="row ">
+                        <div class="col-5">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#modalAgregarCliente">Agregar Cliente</button>
+                        </div>
+                        <div class="col">
+                            <div class="input-group">
+                                <input type="search" class="form-control border-end-0 rounded-start-pill" id="buscarCliente"
+                                    oninput="controlador.buscarCliente(this.value)"
+                                    aria-describedby="inputBusqueda" />
+                                <span class="input-group-text bg-white rounded-end-pill" id="inputBusqueda"><i
+                                        class="fa fa-search text-secondary"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-hover text-center">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Nombre Completo</th>
+                            <th>RFC</th>
+                            <th>Domicilio</th>
+                            <th>telefono</th>
+                            <th>Correo</th>
+                            <th>Fecha de Registro</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contenido">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Formulario para agregar nuevo cliente (Registro) -->
+<div class="modal fade" id="modalAgregarCliente" tabindex="-1" aria-labelledby="modalAltaClienteLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalAltaClienteLabel">Agregar Nuevo Cliente</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Nombre:</label>
+                        <input id="agregarNombre" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Nombre">
+                    </div>
+                    <div class="col">
+                        <label for="">Apellido Paterno:</label>
+                        <input id="agregarApellidoPaterno" type="text"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su primer Apellido">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Apellido Materno:</label>
+                        <input id="agregarApellidoMaterno" type="text"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su segundo Apellido">
+                    </div>
+                    <div class="col">
+                        <label for="">Genero:</label>
+                        <input id="agregarGenero" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su genero">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Fecha Nacimiento:</label>
+                        <input id="agregarFechaNacimiento" type="date"
+                            class="form-control rounded-pill bg-secondary-subtle">
+                    </div>
+                    <div class="col">
+                        <label for="">RFC:</label>
+                        <input id="agregarRFC" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su RFC">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">CURP:</label>
+                        <input id="agregarCurp" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su CURP">
+                    </div>
+                    <div class="col">
+                        <label for="">Foto:</label>
+                        <input id="agregarFoto" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese la ruta de la foto">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Domicilio:</label>
+                        <input id="agregarDomicilio" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Domicilio">
+                    </div>
+                    <div class="col">
+                        <label for="">Codigo Postal:</label>
+                        <input id="agregraCodPostal" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Codigo Postal">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Ciudad:</label>
+                        <input id="agregarCiudad" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Ciudad">
+                    </div>
+                    <div class="col">
+                        <label for="">Estado:</label>
+                        <input id="agregarEstado" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Estado">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Telefono:</label>
+                        <input id="agregarTelefono" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Telefono Celular">
+                    </div>
+                    <div class="col">
+                        <label for="">Fecha de Registro:</label>
+                        <input id="agregarFechaRegistro" type="date"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Fecha de registro">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Correo:</label>
+                        <input id="agregarCorreo" type="email" class="form-control rounded-pill bg-secondary-subtle">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+                <button type="button" class="btn btn-primary btn-lg" onclick="controlador.altaCliente()">Agregar Nuevo Cliente</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal formulario para editar cliente existente-->
+<div class="modal fade" id="modalEditarCliente" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalEditarClienteLabel">Editar Cliente existente</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="editarId">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Nombre:</label>
+                        <input id="editarrNombre" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Nombre">
+                    </div>
+                    <div class="col">
+                        <label for="">Apellido Paterno:</label>
+                        <input id="editarApellidoPaterno" type="text"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su primer Apellido">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Apellido Materno:</label>
+                        <input id="editarApellidoMaterno" type="text"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su segundo Apellido">
+                    </div>
+                    <div class="col">
+                        <label for="">Genero:</label>
+                        <input id="editarGenero" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su genero">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Fecha Nacimiento:</label>
+                        <input id="editarFechaNacimiento" type="date"
+                            class="form-control rounded-pill bg-secondary-subtle">
+                    </div>
+                    <div class="col">
+                        <label for="">RFC:</label>
+                        <input id="editarRFC" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su RFC">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">CURP:</label>
+                        <input id="editarCurp" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su CURP">
+                    </div>
+                    <div class="col">
+                        <label for="">Foto:</label>
+                        <input id="editarFoto" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese la ruta de la foto">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Domicilio:</label>
+                        <input id="editarDomicilio" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Domicilio">
+                    </div>
+                    <div class="col">
+                        <label for="">Codigo Postal:</label>
+                        <input id="editarCodPostal" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Codigo Postal">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Ciudad:</label>
+                        <input id="editarCiudad" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Ciudad">
+                    </div>
+                    <div class="col">
+                        <label for="">Estado:</label>
+                        <input id="editarEstado" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Estado">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Telefono:</label>
+                        <input id="editarTelefono" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Telefono Celular">
+                    </div>
+                    <div class="col">
+                        <label for="">Fecha de Registro:</label>
+                        <input id="editarFechaRegistro" type="date"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Fecha de registro">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="">Correo:</label>
+                        <input id="editarCorreo" type="email" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su correo">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+                <button type="button" class="btn btn-primary btn-lg" onclick="controlador.guardarCliente()">Editar</button>
+            </div>
+        </div>
+    </div>
+</div>

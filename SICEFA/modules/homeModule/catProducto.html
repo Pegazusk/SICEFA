@@ -1,0 +1,325 @@
+<div class="container d-flex justify-content-center align-items-center hv-100">
+    <div class="col-md-10 shadow">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h3>Productos</h3>
+                </div>
+                <div class="d-flex justify-content-between mb-3">
+                    <div>
+                        <button class="btn btn-primary" onclick="controlador.mostrarProductos(true)">Mostrar Activos</button>
+                        <button class="btn btn-secondary" id="btnMostrarTodos" onclick="controlador.mostrarProductos(false)">Mostrar Todos</button>
+                    </div>
+                    <div class="d-flex">
+                        <button type="button" class="btn btn-success btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modalAltaProducto">Agregar Producto</button>
+                        <div class="input-group">
+                            <input type="search" class="form-control form-control-sm border-end-0 rounded-start-pill" id="buscarProducto" oninput="controlador.buscarProducto(this.value)" aria-describedby="inputBusqueda" />
+                            <span class="input-group-text bg-white rounded-end-pill" id="inputBusqueda"><i class="fa fa-search text-secondary"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-bordered table-striped text-center align-middle">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Nombre Genérico</th>
+                                <th scope="col">Unidad de Medida</th>
+                                <th scope="col">Presentación</th>
+                                <th scope="col">Precio Unitario</th>
+                                <th scope="col">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody id="productosBody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Agregar Producto -->
+<div class="modal fade" id="modalAltaProducto" tabindex="-1" aria-labelledby="modalAltaProductoLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalAltaProductoLabel">Agregar Nuevo Producto</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="nombreNuevo">Nombre:</label>
+                        <input type="text" id="nombreNuevo" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese el nombre del Producto">
+                    </div>
+                    <div class="col">
+                        <label for="nombreGenericoNuevo">Nombre Genérico:</label>
+                        <input type="text" id="nombreGenericoNuevo"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese el nombre Generico del Producto">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="formulaFarmaceuticaNueva">Formula Farmaceutica:</label>
+                        <input type="text" id="formulaFarmaceuticaNueva"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su formula farmaceutica">
+                    </div>
+                    <div class="col">
+                        <label for="unidadMedidaNueva">Unidad de medida:</label>
+                        <input type="text" id="unidadMedidaNueva" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese la Unidad de medida">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="presentacionNueva">Presentación:</label>
+                        <input type="text" id="presentacionNueva" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="ingrese la Presentación del Producto">
+                    </div>
+                    <div class="col">
+                        <label for="principalIndicacionNuevo">Principal Indicación:</label>
+                        <input type="text" id="principalIndicacionNuevo"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese la principal indicación del Producto">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="contraIndicacionesNuevo">Contra Indicaciones:</label>
+                        <input type="text" id="contraIndicacionesNuevo"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese las Contra Indicaciones del Producto">
+                    </div>
+                    <div class="col">
+                        <label for="concentracionNuevo">Concentración:</label>
+                        <input type="text" id="concentracionNuevo" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese la Concentración del Producto">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="unidadesEnvaseNuevas">Unidades de envase:</label>
+                        <input type="text" id="unidadesEnvaseNuevas"
+                            class="form-control rounded-pill bg-secondary-subtle" placeholder="Ingrese la unidad">
+                    </div>
+                    <div class="col">
+                        <label for="precioUnitarioNuevo">Precio Unitario:</label>
+                        <input type="text" id="precioUnitarioNuevo"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese el precio por unidad">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="rutaFotoNueva">Ruta de la foto:</label>
+                        <input type="text" id="rutaFotoNueva" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese la Ruta de la Foto">
+                    </div>
+                    <div class="col">
+                        <label for="codigoBarrasNuevo">Codigo de Barras:</label>
+                        <input type="text" id="codigoBarrasNuevo" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese el Codigo">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="fotoNuevo">Foto:</label>
+                        <input type="file" id="fotoNuevo" class="form-control bg-secondary-subtle" accept="image/*">
+                    </div>
+                    <div class="col">
+                        <label for="">Estatus del Producto:</label>
+                        <select id="estatusNuevo" class="form-select rounded-pill bg-secondary-subtle"
+                            aria-placeholder="Seleccione el estatus del Producto">
+                            <option value="">Seleccione el estatus del Producto</option>
+                            <option value="0">Inactivo</option>
+                            <option value="1">Activo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mb-3">
+                    <button id="btnAgregarProducto" type="button" class="btn btn-primary btn-lg">Agregar Nuevo
+                        Producto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Editar Producto -->
+<div class="modal fade" id="modalEditarProducto" tabindex="-1" aria-labelledby="modalEditarProductoLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalEditarProductoLabel">Editar Producto</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="nombreNuevo">Nombre:</label>
+                        <input type="text" id="nombreEdit" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese el nombre del Producto">
+                    </div>
+                    <div class="col">
+                        <label for="nombreGenericoNuevo">Nombre Genérico:</label>
+                        <input type="text" id="nombreGenericoEdit"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese el nombre Generico del Producto">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="formulaFarmaceuticaNueva">Formula Farmaceutica:</label>
+                        <input type="text" id="formulaFarmaceuticaEdit"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su formula farmaceutica">
+                    </div>
+                    <div class="col">
+                        <label for="unidadMedidaNueva">Unidad de medida:</label>
+                        <input type="text" id="unidadMedidaEdit" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese la Unidad de medida">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="presentacionNueva">Presentación:</label>
+                        <input type="text" id="presentacionEdit" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="ingrese la Presentación del Producto">
+                    </div>
+                    <div class="col">
+                        <label for="principalIndicacionNuevo">Principal Indicación:</label>
+                        <input type="text" id="principalIndicacionEdit"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese la principal indicación del Producto">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="contraIndicacionesNuevo">Contra Indicaciones:</label>
+                        <input type="text" id="contraIndicacionesEdit"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese las Contra Indicaciones del Producto">
+                    </div>
+                    <div class="col">
+                        <label for="concentracionNuevo">Concentración:</label>
+                        <input type="text" id="concentracionEdit" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese la Concentración del Producto">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="unidadesEnvaseNuevas">Unidades de envase:</label>
+                        <input type="text" id="unidadesEnvaseEdit"
+                            class="form-control rounded-pill bg-secondary-subtle" placeholder="Ingrese la unidad">
+                    </div>
+                    <div class="col">
+                        <label for="precioUnitarioNuevo">Precio Unitario:</label>
+                        <input type="text" id="precioUnitarioEdit"
+                            class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese el precio por unidad">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="rutaFotoNueva">Ruta de la foto:</label>
+                        <input type="text" id="rutaFotoEdit" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese la Ruta de la Foto">
+                    </div>
+                    <div class="col">
+                        <label for="codigoBarrasNuevo">Codigo de Barras:</label>
+                        <input type="text" id="codigoBarrasEdit" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese el Codigo">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="fotoNuevo">Foto:</label>
+                        <input type="file" id="fotoEdit" class="form-control bg-secondary-subtle" accept="image/*">
+                    </div>
+                    <div class="col">
+                        <label for="">Estatus del Producto:</label>
+                        <select id="estatusEdit" class="form-select rounded-pill bg-secondary-subtle"
+                            aria-placeholder="Seleccione el estatus del Producto">
+                            <option value="">Seleccione el estatus del Producto</option>
+                            <option value="0">Inactivo</option>
+                            <option value="1">Activo</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mb-3">
+                    <button type="button" class="btn btn-info btn-lg" id="btnEditarProductoModal">Editar Producto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Eliminar Producto -->
+<div class="modal fade" id="modalEliminitProducto" tabindex="-1" aria-labelledby="modalEliminitProductoLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalEliminitProductoLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-center m-2">
+                    <img src="img/aviso.png" alt="" style="height: 400px;">
+                </div>
+            </div>
+            <div class="d-flex justify-content-around mb-4">
+                <button type="button" id="btnEliminarProducto" style="width: 200px; border-radius: 50px;" class="btn btn-danger btn-lg "
+                    data-bs-toggle="modal" data-bs-target="#modalConfirmadoProducto">Eliminar</button>
+                <button type="button" style="width: 200px; border-radius: 50px;" class="btn btn-primary btn-lg "
+                    data-bs-toggle="modal" data-bs-target="#modalCanceladoProducto">Cancelar</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Eliminar Confirmado Producto -->
+<div class="modal fade" id="modalConfirmadoProducto" tabindex="-1" aria-labelledby="modalConfirmadoProductoLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalConfirmadoProductoLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-center m-2">
+                    <img src="img/palomita.png" alt="" style="height: 400px;">
+                </div>
+            </div>
+            <div class="d-flex justify-content-around mb-4">
+                <button type="button" id="btnEliminarConfirmado" style="width: 200px; border-radius: 50px;"
+                    class="btn btn-primary btn-lg " data-bs-toggle="modal"
+                    data-bs-target="#modalConfirmadoProducto">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Eliminar Cancelado Producto -->
+<div class="modal fade" id="modalCanceladoProducto" tabindex="-1" aria-labelledby="modalCanceladoProductoLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalCanceladoProductoLabel"></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="d-flex justify-content-center m-2">
+                    <img src="img/equis.png" alt="" style="height: 400px;">
+                </div>
+            </div>
+            <div class="d-flex justify-content-around mb-4">
+                <button type="button" style="width: 200px; border-radius: 50px;" class="btn btn-primary btn-lg "
+                    data-bs-toggle="modal" data-bs-target="#modalCanceladoProducto">Ok</button>
+            </div>
+        </div>
+    </div>
+</div>

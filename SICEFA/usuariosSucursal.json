@@ -1,0 +1,49 @@
+[
+    {
+        "persona":{"nombre":"Alvaro",
+        "apellido": "Gomez",
+        "genero":0},
+        "folio":"AG20230901",
+        "usuario":{"nombreUsuario":"AG20230901",
+        "contrasenia":"AG20230901"
+        },
+        "fecha_registro":"2023-09-01",
+        "estatus":1
+    },
+    
+    {
+        "persona":{"nombre":"Diego",
+        "apellido": "Perez",
+        "genero":0},
+        "folio":"DP20230901",
+        "usuario":{"nombreUsuario":"DP20230901",
+        "contrasenia":"DP20230901"
+        },
+        "fecha_registro":"2023-09-01",
+        "estatus":1
+    },
+    
+    {
+        "persona":{"nombre":"Marcos",
+        "apellido": "Zermeño",
+        "genero":0},
+        "folio":"MZ20230901",
+        "usuario":{"nombreUsuario":"MZ20230901",
+        "contrasenia":"MZ20230901"
+        },
+        "fecha_registro":"2023-09-01",
+        "estatus":1
+    },
+    
+    {
+        "persona":{"nombre":"Humberto",
+        "apellido": "Chavez",
+        "genero":0},
+        "folio":"HC20230901",
+        "usuario":{"nombreUsuario":"HC20230901",
+        "contrasenia":"HC20230901"
+        },
+        "fecha_registro":"2023-09-01",
+        "estatus":1
+    }
+]

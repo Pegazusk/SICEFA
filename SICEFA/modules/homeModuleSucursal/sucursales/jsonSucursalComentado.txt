@@ -1,0 +1,34 @@
+// Arreglo de las Sucursales
+[
+    // Objeto de Sucursal
+    {
+        // Id de la sucursal
+        "id": 1,
+        // Nombre de la sucursal
+        "nombre": "Oxxo SA.DE.CV",
+        // Objeto de Domicilio
+        "Domicilio": {
+            // Calle de la sucursal
+            "calle": "Villas las flores",
+            // Colonia de la sucursal
+            "colonia": "Villas las flores",
+            // Ciudad de la Sucursal
+            "ciudad": "León",
+            // Estado de la sucursal
+            "estado": "Guanajuato",
+            // Codigo Postal de la sucursal
+            "codPostal": "36715"
+        },
+        // Objeto de las Coordenadas
+        "Coordenadas":{
+            // Coordenada Latitud de la sucursal
+            "latitud":"1000",
+            // Coordenada Longitud de la sucursal
+            "longitud":"3000"
+        },
+        // Telefono de la sucursal
+        "telefono": "4776284136",
+        // Estatus de la Sucursal
+        "estatus": 1
+    }
+]

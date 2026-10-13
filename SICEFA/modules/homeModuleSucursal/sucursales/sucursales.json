@@ -1,0 +1,19 @@
+[
+    {
+        "id": 1,
+        "nombre": "Oxxo SA.DE.CV",
+        "Domicilio": {
+            "calle": "Villas las flores",
+            "colonia": "Villas las flores",
+            "ciudad": "León",
+            "estado": "Guanajuato",
+            "codPostal": "36715"
+        },
+        "Coordenadas":{
+            "latitud":"1000",
+            "longitud":"3000"
+        },
+        "telefono": "4776284136",
+        "estatus": 1
+    }
+]

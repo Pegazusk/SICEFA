@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cliente SICEFA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./img/logo_trans.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body_catsucursal">
+    <div class="container d-flex justify-content-between">
+        <div class="col-md-2 row">
+            <div class="col">
+                <a href="home.html">
+                    <img src="./img/logo_trans.png" class="img-fluid">
+                </a>
+            </div>
+            <div class="col">
+                <a href="home.html">
+                    <img src="./img/SICEFA_TRANS.png" class="img-fluid">
+                </a>
+            </div>
+        </div>
+
+                <div class="text-center" style="width: 70px; cursor: pointer;">
+            <img src="img/perifil.jpeg" class="rounded-pill" style="width: 50px;">
+            <strong>Mi Perfil </strong>
+            <a style="text-decoration: none ; color: black;" href="index.html/../../..">
+                <p>salir</p>
+            </a>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary pb-0" style="background-color: #0A0070 !important;">
+        <div class="container d-flex justify-content-center">
+            <ul class="navbar-nav">
+                <li class="nav-item me-5">
+                    <a class="nav-link text-white fs-5 px-4" href="home.html">Inicio</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link text-white fs-5 px-4" href="catSucursal.html">Sucursal</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link text-white fs-5 px-4" href="catProducto.html">Producto</a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link text-white fs-5 px-4" href="catEmpleados.html">Empleado </a>
+                </li>
+                <li class="nav-item me-5">
+                    <a class="nav-link text-white fs-5 px-4 active-nav">Cliente</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="mb-lg-5">
+    </div>
+
+    <div class="container d-flex justify-content-center align-items-center hv-100 ">
+        <div class="col-md-10 shadow">
+            <div class="card">
+                <div class="card-body">
+
+                    <div class="d-flex justify-content-between">
+                        <h3>
+                            Clientes
+                        </h3>
+
+                        <div class="d-flex col-5">
+                            <div class="col-4">
+                                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAltaCliente">Agregar Cliente</button>
+                            </div>
+                            <div class="col">
+                                <div class="input-group">
+                                    <input type="search" class="form-control border-end-0 rounded-start-pill"
+                                        aria-describedby="inputBusqueda" />
+                                    <span class="input-group-text bg-white rounded-end-pill" id="inputBusqueda"><i
+                                            class="fa fa-search text-secondary"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <table class="table table-hover text-center">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Nombre</th>
+                                <th>Apellido Paterno</th>
+                                <th>Apellido Materno</th>
+                                <th>Genero</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Gabriel</td>
+                                <td>Rocha</td>
+                                <td>Rocha</td>
+                                <td>Indefinido</td>
+                                <td>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalEditarCliente">
+                                        <i class="fa fa-edit"></i>
+                                        Editar
+                                    </button>
+                                    <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalEliminitCliente">
+                                        <i class="fa fa-trash"></i>
+                                        Eliminar
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalAltaCliente" tabindex="-1" aria-labelledby="modalAltaClienteLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalAltaClienteLabel">Agregar Nuevo Cliente</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Nombre:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle" placeholder="Ingrese su Nombre">
+                        </div>
+                        <div class="col">
+                            <label for="">RFC:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle" placeholder="Ingrese su RFC">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Apellido Paterno:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle" placeholder="Ingrese su Apellido Paterno">
+                        </div>
+                        <div class="col">
+                            <label for="">CURP:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle" placeholder="Ingrese su CURP">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Apellido Materno:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle" placeholder="Ingrese su Apellido Materno">
+                        </div>
+                        <div class="col">
+                            <label for="">Ciudad:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle" placeholder="Ingrese su Ciudad">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Genero:</label>
+                            <select class="form-select rounded-pill bg-secondary-subtle">
+                                <option value="">Seleecione su Genero</option>
+                                <option value="">Hombre</option>
+                                <option value="">Mujer</option>
+                                <option value="">Indefinido</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="">Estado:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle" placeholder="Ingrese su Estado">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Fecha Nacimiento:</label>
+                            <input type="date" class="form-control rounded-pill bg-secondary-subtle">
+                        </div>
+                        <div class="col">
+                            <label for="">Telefono:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle" placeholder="Ingrese su telefono ">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mb-3">
+                    <button type="button" class="btn btn-primary btn-lg">Agregar Nuevo Cliente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Agregar cliente -->
+    <div class="modal fade" id="modalAltaCliente" tabindex="-1" aria-labelledby="modalAltaClienteLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalAltaClienteLabel">Agregar Nuevo Cliente</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Nombre:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su Nombre">
+                        </div>
+                        <div class="col">
+                            <label for="">RFC:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su RFC">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Apellido Paterno:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su Apellido Paterno">
+                        </div>
+                        <div class="col">
+                            <label for="">CURP:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su CURP">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Apellido Materno:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su Apellido Materno">
+                        </div>
+                        <div class="col">
+                            <label for="">Ciudad:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su Ciudad">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Genero:</label>
+                            <select class="form-select rounded-pill bg-secondary-subtle">
+                                <option value="">Seleecione su Genero</option>
+                                <option value="">Hombre</option>
+                                <option value="">Mujer</option>
+                                <option value="">Indefinido</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="">Estado:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su Estado">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Fecha Nacimiento:</label>
+                            <input type="date" class="form-control rounded-pill bg-secondary-subtle">
+                        </div>
+                        <div class="col">
+                            <label for="">Telefono:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su telefono ">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mb-3">
+                    <button type="button" class="btn btn-primary btn-lg">Agregar Nuevo Cliente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Editar Cliente -->
+    <div class="modal fade" id="modalEditarCliente" tabindex="-1" aria-labelledby="modalEditarClienteLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="modalEliminitClienteLabel">Editar Cliente</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Nombre:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su Nombre">
+                        </div>
+                        <div class="col">
+                            <label for="">RFC:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su RFC">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Apellido Paterno:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su Apellido Paterno">
+                        </div>
+                        <div class="col">
+                            <label for="">CURP:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su CURP">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Apellido Materno:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su Apellido Materno">
+                        </div>
+                        <div class="col">
+                            <label for="">Ciudad:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su Ciudad">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Genero:</label>
+                            <select class="form-select rounded-pill bg-secondary-subtle">
+                                <option value="">Seleecione su Genero</option>
+                                <option value="">Hombre</option>
+                                <option value="">Mujer</option>
+                                <option value="">Indefinido</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <label for="">Estado:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su Estado">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col">
+                            <label for="">Fecha Nacimiento:</label>
+                            <input type="date" class="form-control rounded-pill bg-secondary-subtle">
+                        </div>
+                        <div class="col">
+                            <label for="">Telefono:</label>
+                            <input type="text" class="form-control rounded-pill bg-secondary-subtle"
+                                placeholder="Ingrese su telefono ">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mb-3">
+                    <button type="button" class="btn btn-primary btn-lg">Editar Cliente</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Eliminar Cliente -->
+    <div class="modal fade" id="modalEliminitCliente" tabindex="-1" aria-labelledby="modalEliminitClienteLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center m-2">
+                        <img src="img/aviso_S.png" alt="" style="width: 400px; height: auto;">
+                    </div>
+                    <h5 class="text-center"><b>Desea continuar con la accón, una vez eliminado el dato ya no se podra recuperar</b></h5>
+                </div>
+                <div class="d-flex justify-content-around mb-4">
+                    <button type="button" style="width: 150px; border-radius: 50px;" class="btn btn-danger btn-lg "
+                        data-bs-toggle="modal" data-bs-target="#modalConfirmadoCliente">Eliminar</button>
+                    <button type="button" style="width: 150px; border-radius: 50px;" class="btn btn-primary btn-lg "
+                        data-bs-toggle="modal" data-bs-target="#modalCanceladoCliente">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Eliminar Confirmado Cliente -->
+    <div class="modal fade" id="modalConfirmadoCliente" tabindex="-1" aria-labelledby="modalConfirmadoClienteLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center m-2">
+                        <img src="img/palomita_S.png" alt="" style="width: 400px; height: auto;">
+                    </div>
+                    <h5 class="text-center"><b>Se ha eliminado correctamente</b></h5>
+                </div>
+                <div class="d-flex justify-content-around mb-4">
+                    <button type="button" style="width: 200px; border-radius: 50px;" class="btn btn-primary btn-lg "
+                        data-bs-toggle="modal" data-bs-target="#modalConfirmadoCliente">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Eliminar Cancelado Cliente -->
+    <div class="modal fade" id="modalCanceladoCliente" tabindex="-1" aria-labelledby="modalCanceladoClienteLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="d-flex justify-content-center m-2">
+                        <img src="img/equis_S.png" alt="" style="width: 400px; height: auto;">
+                    </div>
+                    <h5 class="text-center"><b>Se ha Cancelado correctamente</b></h5>
+                </div>
+                <div class="d-flex justify-content-around mb-4">
+                    <button type="button" style="width: 200px; border-radius: 50px;" class="btn btn-primary btn-lg "
+                        data-bs-toggle="modal" data-bs-target="#modalCanceladoCliente">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>

@@ -1,0 +1,83 @@
+<div class="container d-flex justify-content-center align-items-center hv-100 ">
+    <div class="col-md-10 shadow">
+        <div class="card">
+            <div class="card-body">
+                <h3 class="mb-4">Registro de Ventas</h3>
+                <form id="registroVentasForm">
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td><label for="cliente">Cliente:</label></td>
+                                <td><input type="text" id="cliente" name="cliente" class="form-control" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="fecha">Fecha:</label></td>
+                                <td><input type="date" id="fecha" name="fecha" class="form-control" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="hora">Hora:</label></td>
+                                <td><input type="time" id="hora" name="hora" class="form-control" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="empleado">Empleado:</label></td>
+                                <td><input type="text" id="empleado" name="empleado" class="form-control" required>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="productos">Productos:</label></td>
+                                <td><textarea id="productos" name="productos" class="form-control"
+                                        required></textarea></td>
+                            </tr>
+                            <tr>
+                                <td><label for="cantidad">Cantidad:</label></td>
+                                <td><input type="number" id="cantidad" name="cantidad" class="form-control"
+                                        required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="precioUnitario">Precio Unitario:</label></td>
+                                <td><input type="number" id="precioUnitario" name="precioUnitario"
+                                        class="form-control" required></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <button type="button" onclick="controlador.registrarVenta()" class="btn btn-primary">Registrar
+                        Venta</button>
+                </form>
+
+                <hr>
+
+                <h3 class="mb-4">Lista de Ventas</h3>
+                <div>
+                    <label for="sucursalFiltro">Empleado:</label>
+                    <input type="text" id="sucursalFiltro" placeholder="Nombre del Empleado">
+                    <label for="estadoFiltro">Estado:</label>
+                    <select id="estadoFiltro">
+                        <option value="activa">Activa</option>
+                        <option value="inactiva">Inactiva</option>
+                    </select>
+                    <button type="button" onclick="controlador.filtrarVentas()" class="btn btn-primary">Filtrar</button>
+                </div>
+                <table class="table mt-3">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Cliente</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                            <th>Empleado</th>
+                            <th>Productos</th>
+                            <th>Cantidad</th>
+                            <th>Precio Unitario</th>
+                            <th>Estado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="listaVentasBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

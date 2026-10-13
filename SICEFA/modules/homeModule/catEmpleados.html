@@ -1,0 +1,299 @@
+<div class="container d-flex justify-content-center align-items-center hv-100 ">
+    <div class="col-md-10 shadow">
+        <div class="card">
+            <div class="card-body">
+                <div class="d-flex justify-content-between">
+                    <h3>
+                        Empleados
+                    </h3>
+                    <div class="d-flex col-5">
+                        <div class="col-5">
+                            <button type="button" class="btn btn-success" data-bs-toggle="modal"
+                                data-bs-target="#modalAltaEmpleado">Agregar Empleado</button>
+                        </div>
+                        <div class="col">
+                            <div class="input-group">
+                                <input type="search" class="form-control border-end-0 rounded-start-pill" id="buscarEmpleado"
+                                    oninput="controlador.buscarEmpleado(this.value)"
+                                    aria-describedby="inputBusqueda" />
+                                <span class="input-group-text bg-white rounded-end-pill" id="inputBusqueda"><i
+                                        class="fa fa-search text-secondary"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-hover text-center">
+                    <thead class="table-light">
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellido Paterno</th>
+                            <th>Apellido Materno</th>
+                            <th>Clave Empleado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="contenidoEmpleados">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Agregar Empleado -->
+<div class="modal fade" id="modalAltaEmpleado" tabindex="-1" aria-labelledby="modalAltaEmpleadoLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalAltaEmpleadoLabel">Agregar Nuevo Empleado</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="agregarEmpNombre">Nombre:</label>
+                        <input id="agregarEmpNombre" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Nombre">
+                    </div>
+                    <div class="col">
+                        <label for="agregarEmpCiudad">Ciudad:</label>
+                        <input id="agregarEmpCiudad" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Ciudad">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="agregarEmpApellidoPaterno">Apellido Paterno:</label>
+                        <input id="agregarEmpApellidoPaterno" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Apellido Paterno">
+                    </div>
+                    <div class="col">
+                        <label for="agregarEmpEstadoCivil">Estado:</label>
+                        <select id="agregarEmpEstadoCivil" class="form-select rounded-pill bg-secondary-subtle"
+                            aria-placeholder="Seleccione su Estado Civil">
+                            <option value="">Seleccione su Estado Civil</option>
+                            <option value="Soltero">Soltero</option>
+                            <option value="Casado">Casado</option>
+                            <option value="Divorciado">Divorciado</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="agregarEmpApellidoMaterno">Apellido Materno:</label>
+                        <input id="agregarEmpApellidoMaterno" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Apellido Materno">
+                    </div>
+                    <div class="col">
+                        <label for="agregarEmpTelefono">Teléfono:</label>
+                        <input id="agregarEmpTelefono" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Teléfono">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="agregarEmpGenero">Genero:</label>
+                        <select id="agregarEmpGenero" class="form-select rounded-pill bg-secondary-subtle"
+                            aria-placeholder="Seleccione su Genero">
+                            <option value="">Seleccione su Genero</option>
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Indefinido">Indefinido</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="agregarEmpFechaIngreso">Fecha de ingreso:</label>
+                        <input id="agregarEmpFechaIngreso" type="date" class="form-control rounded-pill bg-secondary-subtle">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="agregarEmpFechaNacimiento">Fecha Nacimiento:</label>
+                        <input id="agregarEmpFechaNacimiento" type="date" class="form-control rounded-pill bg-secondary-subtle">
+                    </div>
+                    <div class="col">
+                        <label for="agregarEmpPuesto">Puesto:</label>
+                        <input id="agregarEmpPuesto" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Puesto">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="agregarEmpRFC">RFC:</label>
+                        <input id="agregarEmpRFC" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su RFC">
+                    </div>
+                    <div class="col">
+                        <label for="agregarEmpSalarioMensual">Salario Mensual:</label>
+                        <input id="agregarEmpSalarioMensual" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Salario Mensual">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="agregarEmpCurp">CURP:</label>
+                        <input id="agregarEmpCurp" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su CURP">
+                    </div>
+                    <div class="col">
+                        <label for="agregarEmpCorreo">Email:</label>
+                        <input id="agregarEmpCorreo" type="email" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Correo">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="agregarEmpDomicilio">Domicilio:</label>
+                        <input id="agregarEmpDomicilio" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="ingrese su Domicilio">
+                    </div>
+                    <div class="col">
+                        <label for="agregarEmpCodPostal">Codigo Postal:</label>
+                        <input id="agregarEmpCodPostal" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Codigo Postal">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="agregarEmpFoto">Foto:</label>
+                        <input id="agregarEmpFoto" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                    placeholder="Ingrese la ruta de la foto">
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center mb-3">
+                    <button type="button" class="btn btn-primary btn-lg" onclick="controlador.altaEmpleado()">Agregar Nuevo Empleado</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Editar Empleado -->
+<div class="modal fade" id="modalEditarEmpleado" tabindex="-1" aria-labelledby="modalEliminitEmpleadoLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="modalEliminitEmpleadoLabel">Editar Empleado</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <input type="hidden" id="editarEmpId">
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="editarEmpNombre">Nombre:</label>
+                        <input id="editarEmpNombre" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Nombre">
+                    </div>
+                    <div class="col">
+                        <label for="editarEmpCiudad">Ciudad:</label>
+                        <input id="editarEmpCiudad" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Ciudad">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="editarEmpApellidoPaterno">Apellido Paterno:</label>
+                        <input id="editarEmpApellidoPaterno" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Apellido Paterno">
+                    </div>
+                    <div class="col">
+                        <label for="editarEmpEstadoCivil">Estado:</label>
+                        <select id="editarEmpEstadoCivil" class="form-select rounded-pill bg-secondary-subtle"
+                            aria-placeholder="Seleccione su Estado Civil">
+                            <option value="">Seleccione su Estado Civil</option>
+                            <option value="Soltero">Soltero</option>
+                            <option value="Casado">Casado</option>
+                            <option value="Divorciado">Divorciado</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="editarEmpApellidoMaterno">Apellido Materno:</label>
+                        <input id="editarEmpApellidoMaterno" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Apellido Materno">
+                    </div>
+                    <div class="col">
+                        <label for="editarEmpTelefono">Teléfono:</label>
+                        <input id="editarEmpTelefono" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Teléfono">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="editarEmpGenero">Genero:</label>
+                        <select id="editarEmpGenero" class="form-select rounded-pill bg-secondary-subtle"
+                            aria-placeholder="Seleccione su Genero">
+                            <option value="">Seleccione su Genero</option>
+                            <option value="Hombre">Hombre</option>
+                            <option value="Mujer">Mujer</option>
+                            <option value="Indefinido">Indefinido</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="editarEmpFechaIngreso">Fecha de ingreso:</label>
+                        <input id="editarEmpFechaIngreso" type="date" class="form-control rounded-pill bg-secondary-subtle">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="editarEmpFechaNacimiento">Fecha Nacimiento:</label>
+                        <input id="editarEmpFechaNacimiento" type="date" class="form-control rounded-pill bg-secondary-subtle">
+                    </div>
+                    <div class="col">
+                        <label for="editarEmpPuesto">Puesto:</label>
+                        <input id="editarEmpPuesto" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Puesto">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="editarEmpRFC">RFC:</label>
+                        <input id="editarEmpRFC" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su RFC">
+                    </div>
+                    <div class="col">
+                        <label for="editarEmpSalarioMensual">Salario Mensual:</label>
+                        <input id="editarEmpSalarioMensual" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Salario Mensual">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="editarEmpCurp">CURP:</label>
+                        <input id="editarEmpCurp" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su CURP">
+                    </div>
+                    <div class="col">
+                        <label for="editarEmpCorreo">Email:</label>
+                        <input id="editarEmpCorreo" type="email" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Correo">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="editarEmpDomicilio">Domicilio:</label>
+                        <input id="editarEmpDomicilio" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="ingrese su Domicilio">
+                    </div>
+                    <div class="col">
+                        <label for="editarEmpCodPostal">Codigo Postal:</label>
+                        <input id="editarEmpCodPostal" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                            placeholder="Ingrese su Codigo Postal">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <div class="col">
+                        <label for="editarEmpFoto">Foto:</label>
+                        <input id="editarEmpFoto" type="text" class="form-control rounded-pill bg-secondary-subtle"
+                    placeholder="Ingrese la ruta de la foto">
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center mb-3">
+                <button type="button" class="btn btn-primary btn-lg" onclick="controlador.guardarEmpleado()">Editar Empleado</button>
+            </div>
+        </div>
+    </div>
+</div>

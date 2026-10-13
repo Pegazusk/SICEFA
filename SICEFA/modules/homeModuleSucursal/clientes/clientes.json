@@ -1,0 +1,128 @@
+[
+    {
+        "id": 1,
+        "Persona": {
+            "nombre": "Juan Alberto",
+            "apellidoPaterno": "Juarez",
+            "apellidoMaterno": "Rodriguez",
+            "genero": "Masculino",
+            "fechaNacimiento": "1997-10-10",
+            "RFC": "HCJ54QGLP",
+            "Curp": "JJAR542DGTO2020",
+            "foto": "JuanRodriguez.jpg",
+            "domicilio": "Villas las flores",
+            "codPostal": "36715",
+            "ciudad": "León",
+            "estado": "Guanajuato",
+            "telefono": "4776284136"
+        },
+        "fechaRegistro": "2023-11-22",
+        "correo": "JuanRodriguez@gmail.com",
+        "estatus": 1
+    },
+    {
+        "id": 2,
+        "Persona": {
+            "nombre": "María Guadalupe",
+            "apellidoPaterno": "Hernández",
+            "apellidoMaterno": "Sánchez",
+            "genero": "Femenino",
+            "fechaNacimiento": "1985-05-15",
+            "RFC": "HSM75QPLG",
+            "Curp": "MGHS542DFR2021",
+            "foto": "MariaHernandez.jpg",
+            "domicilio": "Colonia del Bosque",
+            "codPostal": "44123",
+            "ciudad": "Querétaro",
+            "estado": "Querétaro",
+            "telefono": "4427123456"
+        },
+        "fechaRegistro": "2023-11-22",
+        "correo": "MariaHS@gmail.com",
+        "estatus": 1
+    },
+    {
+        "id": 3,
+        "Persona": {
+            "nombre": "Carlos Alberto",
+            "apellidoPaterno": "López",
+            "apellidoMaterno": "García",
+            "genero": "Masculino",
+            "fechaNacimiento": "1990-02-28",
+            "RFC": "LAG89QPLD",
+            "Curp": "CALG542DFT2022",
+            "foto": "CarlosLopez.jpg",
+            "domicilio": "Calle del Sol",
+            "codPostal": "22015",
+            "ciudad": "Tijuana",
+            "estado": "Baja California",
+            "telefono": "6649876543"
+        },
+        "fechaRegistro": "2023-11-22",
+        "correo": "CarlosLopez@gmail.com",
+        "estatus": 1
+    },
+    {
+        "id": 4,
+        "Persona": {
+            "nombre": "Laura Alejandra",
+            "apellidoPaterno": "Ramírez",
+            "apellidoMaterno": "Vega",
+            "genero": "Femenino",
+            "fechaNacimiento": "1988-09-20",
+            "RFC": "RVL88QPLA",
+            "Curp": "LARV542DFG2021",
+            "foto": "LauraRamirez.jpg",
+            "domicilio": "Avenida de las Rosas",
+            "codPostal": "55030",
+            "ciudad": "Ecatepec",
+            "estado": "Estado de México",
+            "telefono": "5558764321"
+        },
+        "fechaRegistro": "2023-11-22",
+        "correo": "LauraRV@gmail.com",
+        "estatus": 1
+    },
+    {
+        "id": 5,
+        "Persona": {
+            "nombre": "Javier",
+            "apellidoPaterno": "Gutiérrez",
+            "apellidoMaterno": "Soto",
+            "genero": "Masculino",
+            "fechaNacimiento": "1982-07-12",
+            "RFC": "GJS82QPLI",
+            "Curp": "JAGS542DFJ2020",
+            "foto": "JavierGutierrez.jpg",
+            "domicilio": "Calle de los Pinos",
+            "codPostal": "32000",
+            "ciudad": "Chihuahua",
+            "estado": "Chihuahua",
+            "telefono": "6147654321"
+        },
+        "fechaRegistro": "2023-11-22",
+        "correo": "JavierGS@gmail.com",
+        "estatus": 1
+    },
+    {
+        "id": 6,
+        "Persona": {
+            "nombre": "Elena",
+            "apellidoPaterno": "Moreno",
+            "apellidoMaterno": "Mendoza",
+            "genero": "Femenino",
+            "fechaNacimiento": "1995-03-03",
+            "RFC": "MEM95QPLH",
+            "Curp": "ELMM542DFM2022",
+            "foto": "ElenaMoreno.jpg",
+            "domicilio": "Rincón del Valle",
+            "codPostal": "66220",
+            "ciudad": "San Pedro Garza García",
+            "estado": "Nuevo León",
+            "telefono": "8112345678"
+        },
+        "fechaRegistro": "2023-11-22",
+        "correo": "ElenaMoreno@gmail.com",
+        "estatus": 1
+    }
+]

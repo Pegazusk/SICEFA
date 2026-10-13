@@ -1,0 +1,22 @@
+[
+    {
+        "cliente": "Juan Alberto Juarez Rodriguez",
+        "fecha": "2026-10-10",
+        "hora": "11:20",
+        "empleado": "Marcos Zermeño",
+        "productos": "Ambroxol",
+        "cantidad": "2",
+        "precioUnitario": "215.79",
+        "activa": true
+    },
+    {
+        "cliente": "María Guadalupe Hernández Sánchez",
+        "fecha": "2026-10-12",
+        "hora": "17:05",
+        "empleado": "Humberto Chavez",
+        "productos": "Donepezilo",
+        "cantidad": "1",
+        "precioUnitario": "466.90",
+        "activa": true
+    }
+]
